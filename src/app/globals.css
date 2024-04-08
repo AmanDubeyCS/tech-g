@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 *{
   box-sizing: border-box;
@@ -10,7 +11,45 @@
 
 .container{
   max-width: 1600px;
-  width: calc(100% - 5rem);
+  width: 72rem;
   margin: auto;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+.card-bg{
+  background: linear-gradient(#fff, #fafafa) padding-box, linear-gradient(120deg, #d4d4d8, #f4f4f5, #d4d4d8) border-box;;
+}
+
+.pera{
+  font-size: 0.875rem/* 14px */;
+  line-height: 1.5rem/* 20px */;
+  font-weight: 500;
+  color: #71717A;
+}
+
+.head{
+  font-size: 1rem/* 16px */;
+  line-height: 1.5rem/* 24px */;
+  font-weight: 600;
+  color: #18181B;
+}
+
+.ft3head{
+    line-height: 2.5rem/* 40px */;
+    --tw-text-opacity: 1;
+    color: rgb(228 228 231 / var(--tw-text-opacity));
+    font-weight: 700;
+
+}
+
+.ft3pera{
+  font-size: 1.125rem/* 18px */;
+  line-height: 1.75rem/* 28px */;
+  --tw-text-opacity: 1;
+    color: rgb(113 113 122 / var(--tw-text-opacity));
+    font-weight: 500;
+}
+
+.ft3cardbg{
+  background: linear-gradient(#2E2E32, #2E2E32) padding-box, linear-gradient(120deg, #3f3f46, rgb(63 63 70 / 0), #3f3f46) border-box;;
 }
