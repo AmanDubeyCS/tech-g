@@ -10,8 +10,8 @@
 }
 
 .container{
-  max-width: 1600px;
-  width: 72rem;
+  max-width: 72rem;
+  width: calc(100% - 2rem);
   margin: auto;
   font-family: "Inter", sans-serif;
 }
@@ -31,7 +31,7 @@
   font-size: 1rem/* 16px */;
   line-height: 1.5rem/* 24px */;
   font-weight: 600;
-  color: #18181B;
+  /* color: #18181B; */
 }
 
 .ft3head{

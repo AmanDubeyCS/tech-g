@@ -11,8 +11,8 @@ const Features2 = () => {
   return (
     <section className="py-20">
       <div className="container">
-        <div className="w-[48rem] text-center m-auto pb-12">
-          <h2 className="text-[40px] font-bold leading-tight mb-4">
+        <div className="max-w-[48rem] text-center m-auto pb-12">
+          <h2 className="text-3xl md:text-[40px] font-bold leading-tight mb-4">
             AI-powered features and effects
           </h2>
           <p className="text-lg text-[#71717A]">
@@ -20,8 +20,8 @@ const Features2 = () => {
             into an actual designs. No creating, no skills, no reshaping.
           </p>
         </div>
-        <div className="grid grid-cols-3 grid-rows-2 gap-8">
-          <div className="col-span-2 border rounded-xl card-bg">
+        <div className="grid max-w-80 m-auto sm:max-w-full sm:grid-cols-2 sm:grid-row-3 md:grid-cols-3 md:grid-rows-2 grid-cols-1 gap-8">
+          <div className="sm:col-span-2 border rounded-xl card-bg">
             <div className=" p-5 ">
               <div className="flex">
                 <svg

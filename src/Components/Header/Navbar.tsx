@@ -7,8 +7,8 @@ import Button from "../Button/Button";
 const Navbar = () => {
   return (
     <header>
-      <div className="containe absolute top-5 w-full">
-        <div className="m-auto w-[48rem] max-w-[48rem] flex justify-between p-3 left-[30%] border rounded-lg border-gray-300 items-center">
+      <div className="absolute top-5 w-full px-4">
+        <div className="m-auto max-w-[48rem] flex justify-between p-3 border rounded-lg border-gray-300 items-center">
             <div className="shadow-md bg-white p-1 rounded-md">
             <Image src={logo} alt="logo" width={24} height={24}/>
             </div>

@@ -1,4 +1,42 @@
 import React from "react";
+import Button from "../Button/Button";
+import PricingCard from "../Pricing-card/PricingCard";
+import pricingDecor from "../../Assets/pricing-decoration.png";
+import Image from "next/image";
+
+interface faqs {
+  question: string,
+  answer?: string
+}
+
+const FaqS = ({question, answer}:faqs) => {
+  return (
+    <div className="px-4 py-2 bg-[#f4f4f5] rounded-md">
+      <div className="flex justify-between">
+        <h2 className="ft3pera">{question}?</h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="#a1a1aa"
+          stroke="currentColor"
+          strokeWidth="1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="icon icon-tabler icons-tabler-outline icon-tabler-plus"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 5l0 14" />
+          <path d="M5 12l14 0" />
+        </svg>
+      </div>
+      <div>
+        <p>{answer}</p>
+      </div>
+    </div>
+  );
+};
 
 const Pricing = () => {
   return (
@@ -13,35 +51,34 @@ const Pricing = () => {
             extra features and collaboration with your team.
           </p>
         </div>
-        <div className="grid grid-cols-3">
-            <div>
-                <div className="card-bg p-6 border border-transparent rounded-lg">
-                    <div className="mb-2">
-                        <div className="head !text-lg">Essential</div>
-                        <div className="mb-1">
-                            <span className="head !text-2xl !font-bold">$</span>
-                            <span className="head !text-3xl !font-bold">29</span>
-                            <span className="pera">/mo</span>
-                        </div>
-                        <div className="pera !text-base">For power users who want access to creative features.</div>
-                    </div>
-                    <div>
-                        <div className="pera">Includes:</div>
-                        
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <button></button>
-                    </div>
-                </div>
-            </div>
+        <div className="grid grid-cols-3 gap-6 pb-20">
+          <PricingCard amount="24" typeOfOffer="Essential" />
+          <div className="relative">
+            <Image
+              src={pricingDecor}
+              alt="pricing decoration"
+              width={76}
+              height={74}
+              className="absolute right-8 -top-4 mix-blend-exclusion"
+            />
+            <PricingCard
+              amount="49"
+              typeOfOffer="Premium"
+              props="bg-[#27272a]"
+            />
+          </div>
+          <PricingCard amount="99" typeOfOffer="Enterprise" />
+        </div>
+
+        <div className="w-[42rem] m-auto">
+          <div className="flex flex-col gap-2">
+          <FaqS question="Can I use the product for free" />
+          <FaqS question="What payment methods can I use" />
+          <FaqS question="Can I change from monthly to yearly billing" />
+          <FaqS question="Can I use the tool for personal, client, and commercial projects"/>
+          <FaqS question="How can I ask other questions about pricing" />
+          <FaqS question="Do You Offer discount for students and non-profit companies" />
+          </div>
         </div>
       </div>
     </section>
