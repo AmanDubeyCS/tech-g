@@ -88,7 +88,7 @@ const PricingCard = ({ amount, typeOfOffer, props }: priceCard) => {
           </ul>
         </div>
         <div className="mt-5">
-          <Button text="Try for Free" props={ `${props? 'bg-white text-black' : ""} text-center`} />
+          <Button text="Try for Free" props={ `${props? 'bg-white text-gray-500' : ""} text-center`} />
         </div>
       </div>
     </div>

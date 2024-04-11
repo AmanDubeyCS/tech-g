@@ -15,11 +15,11 @@ export default function Home() {
    <Hero />
    <Features />
    <Features2 />
-   {/* <Features3 />
+   <Features3 />
    <Pricing />
    <Testimonials />
    <Cta />
-   <Footer /> */}
+   <Footer />
    </>
   );
 }

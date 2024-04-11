@@ -37,8 +37,8 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="py-20 bg-[rgb(39,39,42)] text-white">
-      <div className="w-[48rem] text-center m-auto pb-12">
-        <h2 className="text-[40px] font-bold leading-tight mb-4">
+      <div className="max-ww-[48rem] text-center m-auto pb-12">
+        <h2 className="text-3xl md:text-[40px] font-bold leading-tight mb-4">
           Loved by thousands of creatives from around the world
         </h2>
       </div>

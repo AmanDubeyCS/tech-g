@@ -37,7 +37,7 @@ const Cta = () => {
                 <Image src={logo} alt="logo" width={60} height={60} loading="lazy"/>
               </a>
             </div>
-            <h2 className="text-[40px] font-bold leading-tight mb-4">
+            <h2 className="text-3xl md:text-[40px] font-bold leading-tight mb-4">
               Start your journey {" "}
               <span className=" inline-flex justify-center items-center relative">
                  today
@@ -59,13 +59,13 @@ const Cta = () => {
               Gray removes creative distances by connecting beginners, pros, and
               every team in between. Are you ready to start your journey?
             </p>
-            <div className='flex justify-center gap-5'>
+            <div className='flex flex-col sm:flex-row justify-center gap-5'>
             <div><Button text='Request Demo'/></div>
             <div><Button text='Try For Free'props="bg-white text-gray-500"/></div>
           </div>
           </div>
           <div className="text-center">
-            <ul className="inline-flex justify-center items-center gap-3" 
+            <ul className="inline-flex flex-wrap justify-center items-center gap-3" 
             style={{
                 WebkitMaskImage: "linear-gradient(to right,transparent 8px,rgb(255 255 255/70) 64px,#fff 50%,rgb(255 255 255/70) calc(100% - 64px),transparent calc(100% - 8px))",
                 maskImage: "linear-gradient(to right,transparent 8px,rgb(255 255 255/70) 64px,#fff 50%,rgb(255 255 255/70) calc(100% - 64px),transparent calc(100% - 8px))"

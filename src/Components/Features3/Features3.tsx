@@ -1,14 +1,18 @@
 "use client";
-import React from "react";
-import fI from "../../Assets/carousel-illustration-01.jpg";
+import React, { useState } from "react";
+import fI1 from "../../Assets/carousel-illustration-01.jpg";
+import fI2 from "../../Assets/feature-post-02.png";
+import fI3 from "../../Assets/feature-post-03.png";
 import Image from "next/image";
 import ring from "../../Assets/features-illustration.png";
 
 const Features3 = () => {
+  const [Img, setImg] = useState(fI1)
+
   return (
     <section className="py-20 bg-[rgb(39,39,42)] relative  overflow-hidden">
-      <div className="container flex">
-        <div className="w-[48%]">
+      <div className="container lg:flex">
+        <div className="max-w-lg lg:w-[48%] m-auto lg:m-0">
           <div className=" mb-8">
             <div className="pera border rounded-full py-1 px-4 w-max bg-transparent mb-4">
               Scale Your Team
@@ -23,7 +27,7 @@ const Features3 = () => {
             </p>
           </div>
           <div>
-            <div className="flex items-center py-4 px-6 rounded-md ft3cardbg">
+            <div className={`flex items-center py-4 px-6 mt-2 cursor-pointer ${ (Img === fI1) ? "ft3cardbg": ""}`} onClick={() => setImg(fI1)}>
               <svg
                 className="fill-[#a1a1aa] mr-3 shrink-0"
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,9 +45,9 @@ const Features3 = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center py-4 px-6 mt-2 ">
+            <div className={`flex items-center py-4 px-6 mt-2 cursor-pointer ${ (Img === fI2) ? "ft3cardbg": ""}`} onClick={() => setImg(fI2)}>
               <svg
-                className="fill-[#a1a1aa] mr-3"
+                className="fill-[#a1a1aa] mr-3 shrink-0"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -58,9 +62,9 @@ const Features3 = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center py-4 px-6 mt-2">
+            <div className={`flex items-center py-4 px-6 mt-2 cursor-pointer ${ (Img === fI3) ? "ft3cardbg": ""}`} onClick={() => setImg(fI3)}>
               <svg
-                className="fill-[#a1a1aa] mr-3"
+                className="fill-[#a1a1aa] mr-3 shrink-0"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -79,17 +83,17 @@ const Features3 = () => {
             </div>
           </div>
         </div>
-        <div className="ml-24">
-          <div className="w-full absolute">
-            <Image src={fI} alt="image" width={800} height={620} />
-            <div className="absolute -translate-x-1/2 -translate-y-2/3 mix-blend-exclusion">
+        <div className="max-w-lg m-auto lg:ml-24 mt-5 ">
+          <div className="lg:absolute w-full">
+            <Image src={Img} alt="image" width={800} height={620}/>
+            <div className="max-w-32 lg:max-w-full absolute -translate-x-1/2 -translate-y-2/3 mix-blend-exclusion">
               <Image src={ring} alt="ring" width={173} height={167} />
             </div>
           </div>
         </div>
       </div>
       <div className="container">
-        <div className="grid grid-cols-3 grid-rows-2 gap-16 mt-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-8 mg:gap-16 mt-24">
           <div>
             <div className="flex items-center mb-1">
               <svg

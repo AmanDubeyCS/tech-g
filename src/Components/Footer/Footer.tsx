@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <div className=" bg-[#f4f4f5] ">
-        <div className="container grid grid-cols-12 py-12 gap-8 border-t-2">
+        <div className="container flex flex-col sm:grid sm:grid-cols-12 py-12 gap-8 border-t-2">
           <div className="col-span-6 flex-col flex">
             <div className="mb-4">
               <div className="shadow-md w-7 bg-white p-1 rounded-md">
