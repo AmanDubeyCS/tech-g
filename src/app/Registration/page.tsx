@@ -80,7 +80,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container grid grid-cols-3 gap-16 text-center px-20 pb-20">
+      <div className="container grid md:grid-cols-3 gap-16 text-center px-20 pb-20">
         <div>
           <div className="border rounded-sm justify-center items-center w-8 h-8 inline-flex mb-3">
             <svg
@@ -138,7 +138,7 @@ const page = () => {
           <div className="text-center pb-12 max-w-3xl m-auto">
             <h2 className="text-3xl  font-bold pb-4 leading-tight tracking-tight">Join the Community</h2>
           </div>
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-4 border bg-white  rounded flex flex-col">
               <div className="flex items-center mb-3">
                 <div className="flex rounded-full justify-center items-center mr-3 w-10 h-10 bg-black">

@@ -41,7 +41,7 @@ const Features2 = () => {
                 <br /> specs and insights.
               </p>
             </div>
-            <Image src={f1} alt="features Image" />
+            <Image src={f1} alt="features Image" className="object-cover object-left h-72"/>
           </div>
           <div className="border rounded-xl card-bg">
             <div className=" p-5">
