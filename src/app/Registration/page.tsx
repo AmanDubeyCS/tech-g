@@ -14,7 +14,7 @@ const page = () => {
           </h2>
           <p className="text-lg mb-8 text-[#71717A]">
             Talk to an expert about your requirements, needs, and timeline.
-            Complete the form and we'll make sure to reach out.
+            Complete the form and we&apos;ll make sure to reach out.
           </p>
         </div>
 
